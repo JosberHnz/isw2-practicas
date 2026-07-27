@@ -70,3 +70,10 @@ const asignarEquipo = async () => {
 ```
 
 
+## Mejoras realizadas
+
+- Se utilizaron **cláusulas de salida temprana** para reducir el nivel de anidamiento.
+- Se mejoró la legibilidad del código.
+- Se agregó el registro del error mediante `console.error()` para facilitar la depuración.
+- La lógica quedó más clara y sencilla de mantener.
+- La función ahora es más fácil de refactorizar en el futuro, separando el acceso a datos de la lógica del componente.
