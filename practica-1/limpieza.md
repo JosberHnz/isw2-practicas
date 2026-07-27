@@ -23,3 +23,10 @@ const asignarEquipo = async () => {
 };
 ```
 
+## Code Smells identificados
+
+- **Anidamiento excesivo de condicionales**: existen varios `if` dentro de otros `if`, lo que dificulta la lectura.
+- **Método con múltiples responsabilidades**: el método busca datos, modifica la información, guarda cambios y muestra mensajes al usuario.
+- **Manejo de errores muy genérico**: el bloque `catch` no proporciona información sobre el error ocurrido.
+- **Dependencia directa de AsyncStorage**: el acceso al almacenamiento está mezclado con la lógica de negocio, dificultando el mantenimiento y las pruebas.
+- **Código con baja reutilización**: la lógica para obtener y actualizar equipos podría reutilizarse en otros componentes.
