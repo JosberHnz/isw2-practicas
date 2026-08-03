@@ -6,7 +6,7 @@ Carrera: Ingenieria en Informática
 ## Índice
 
 - Práctica 1 - iniciada
-- Práctica 2
+- Práctica 2 - iniciada
 - Práctica 3
 - Práctica 4
 - Práctica 5
