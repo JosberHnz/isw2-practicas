@@ -2,14 +2,13 @@
 
 ## Run verde en Actions
 
-- URL del run: **[PEGAR AQUÍ el link a la pestaña Actions → tu run en verde]**
+- URL del run: https://github.com/JosberHnz/isw2-practicas/actions/runs/34922226806
 - (Opcional) Captura de pantalla: agrega aquí una imagen del run en verde,
   por ejemplo `![run verde](./run-verde.png)` si subes una captura a esta carpeta.
 
 ## URL pública viva
 
-- URL de GitHub Pages: **[PEGAR AQUÍ la URL que te dio Settings → Pages, algo como
-  https://josberhnz.github.io/isw2-practicas/]**
+- URL de GitHub Pages: https://josberhnz.github.io/isw2-practicas/
 
 ## Reflexión (5 líneas)
 
@@ -23,3 +22,5 @@ detectar estilo y errores antes de correr las pruebas, y (2) una prueba
 pedido → calcular mora → notificar) en vez de solo probar funciones
 aisladas, para detectar fallos de integración que las pruebas unitarias no
 ven.
+
+Practica 8: completar evidencia con URLs reales
