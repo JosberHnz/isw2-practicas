@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Ejecutar pruebas (practica-4 y practica-5)
+        run: |
+          set -e
+          hubo_fallos=0
+          encontrados=0
+          for f in $(find . -name "*.test.js" -not -path "*/node_modules/*"); do
+            echo "== Ejecutando $f =="
+            encontrados=1
+            salida=$(node "$f" || true)
+            echo "$salida"
+            if echo "$salida" | grep -q "❌ FAIL"; then
+              hubo_fallos=1
+            fi
+          done
+          if [ "$encontrados" -eq 0 ]; then
+            echo "No se encontró ningún archivo *.test.js"
+            exit 1
+          fi
+          if [ "$hubo_fallos" -eq 1 ]; then
+            echo "Hay pruebas marcadas como ❌ FAIL en la salida. El pipeline falla a propósito."
+            exit 1
+          fi
+          echo "Todas las pruebas encontradas pasaron."
