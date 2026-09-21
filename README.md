@@ -13,4 +13,4 @@ Carrera: Ingenieria en Informática
 - Práctica 6 - Completada
 - Práctica 7 - Completada
 - Práctica 8 - Completada
-- Práctica 9
+- Práctica 9 - Completada
